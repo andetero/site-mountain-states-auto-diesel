@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mountain States Auto &amp; Diesel | Auto &amp; Diesel Repair in Elizabeth, CO</title>
 <meta name="description" content="Mountain States Auto &amp; Diesel is an auto and diesel repair shop in Elizabeth, CO, with mobile repairs. Rated 4.7 stars from 58 Google reviews. Call (720) 666-0094.">
-<meta name="theme-color" content="#12304f">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#12304f" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#12304f" media="(prefers-color-scheme: dark)">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Mountain States Auto &amp; Diesel | Elizabeth, CO">
 <meta property="og:description" content="Honest auto and diesel repair in Elizabeth, CO. 4.7 stars from 58 Google reviews. Call (720) 666-0094.">
@@ -16,79 +18,80 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--navy:#12304f;--navy-2:#0b2036;--steel:#eef2f6;--line:#d5dde6;--ink:#1c2733;--muted:#4f5d6b;--red:#c8372d;--red-dk:#a32a21;--sky:#dbe7f2;--max:1120px;--r:14px}
+:root{color-scheme:light dark;--bg:#ffffff;--surface:#ffffff;--surface-2:#eef2f6;--hero-bg:#f4f1ea;--hero-line:#e3ddd0;--dot:rgba(18,48,79,.07);--line:#d5dde6;--ink:#1c2733;--muted:#4f5d6b;--heading:#12304f;--accent-text:#c8372d;--card-top:#12304f;--star:#e7a400;--star-off:#d5dde6;--shadow:rgba(18,48,79,.12);--shadow-sm:rgba(18,48,79,.08);--shadow-hdr:rgba(0,0,0,.18);--shadow-red:rgba(200,55,45,.28);--shadow-float:rgba(0,0,0,.35);--bar:#12304f;--bar-2:#0b2036;--on-bar:#ffffff;--bar-muted:#d7e2ee;--bar-soft:#c9d6e3;--bar-faint:#a9b8c8;--dot-accent:#ff8a7d;--red:#c8372d;--red-dk:#a32a21;--fb:#1877f2;--fb-dk:#0f63d0;--g-blue:#4285F4;--g-green:#34A853;--g-yellow:#FBBC05;--g-red:#EA4335;--max:1120px;--r:14px}
+@media (prefers-color-scheme: dark){:root{--bg:#0f1720;--surface:#16212d;--surface-2:#121c27;--hero-bg:#131d28;--hero-line:#223142;--dot:rgba(255,255,255,.05);--line:#2a3a4c;--ink:#e3e9f0;--muted:#a9b6c4;--heading:#e8eef5;--accent-text:#ff8a7d;--card-top:#4f7fb3;--star:#f2b312;--star-off:#3a4a5c;--shadow:rgba(0,0,0,.35);--shadow-sm:rgba(0,0,0,.3);--shadow-hdr:rgba(0,0,0,.4);--shadow-red:rgba(0,0,0,.35);--shadow-float:rgba(0,0,0,.5)}}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:#fff;color:var(--ink);font:400 18px/1.6 "Source Sans 3",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 18px/1.6 "Source Sans 3",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased}
 h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",sans-serif;line-height:1.05;margin:0 0 .45em;letter-spacing:.01em}
-a{color:var(--navy)}
+a{color:var(--heading)}
 a:focus-visible,.btn:focus-visible{outline:3px solid var(--red);outline-offset:3px}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
-.skip{position:absolute;left:-999px;top:0;background:var(--navy);color:#fff;padding:8px 14px;z-index:100}
+.skip{position:absolute;left:-999px;top:0;background:var(--bar);color:var(--on-bar);padding:8px 14px;z-index:100}
 .skip:focus{left:10px;top:10px}
 svg.i{width:20px;height:20px;flex:none}
 
-.top{background:var(--navy);color:#fff;position:sticky;top:0;z-index:50;box-shadow:0 2px 12px rgba(0,0,0,.18)}
+.top{background:var(--bar);color:var(--on-bar);position:sticky;top:0;z-index:50;box-shadow:0 2px 12px var(--shadow-hdr)}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
-.brand{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none}
+.brand{display:flex;align-items:center;gap:12px;color:var(--on-bar);text-decoration:none}
 .brand b{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:1.45rem;letter-spacing:.03em;text-transform:uppercase;line-height:1}
 .brand small{display:block;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;opacity:.75;margin-top:3px}
 .top nav{display:flex;align-items:center;gap:22px}
-.top nav a{color:#d7e2ee;text-decoration:none;font-weight:600;font-size:.98rem}
-.top nav a:hover{color:#fff}
-.top .phone{display:inline-flex;align-items:center;gap:8px;background:var(--red);color:#fff;padding:9px 16px;border-radius:999px}
+.top nav a{color:var(--bar-muted);text-decoration:none;font-weight:600;font-size:.98rem}
+.top nav a:hover{color:var(--on-bar)}
+.top .phone{display:inline-flex;align-items:center;gap:8px;background:var(--red);color:var(--on-bar);padding:9px 16px;border-radius:999px}
 .top .phone:hover{background:var(--red-dk)}
 
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:1.25rem;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;padding:14px 26px;border-radius:999px;border:2px solid transparent;transition:transform .15s,background .15s,box-shadow .15s;white-space:nowrap}
 .btn:hover{transform:translateY(-1px)}
-.btn.red{background:var(--red);color:#fff;box-shadow:0 8px 20px rgba(200,55,45,.28)}
+.btn.red{background:var(--red);color:var(--on-bar);box-shadow:0 8px 20px var(--shadow-red)}
 .btn.red:hover{background:var(--red-dk)}
-.btn.line{background:#fff;color:var(--navy);border-color:var(--navy)}
-.btn.line:hover{background:var(--steel)}
-.btn.fb{background:#1877f2;color:#fff}
-.btn.fb:hover{background:#0f63d0}
+.btn.line{background:var(--surface);color:var(--heading);border-color:var(--heading)}
+.btn.line:hover{background:var(--surface-2)}
+.btn.fb{background:var(--fb);color:var(--on-bar)}
+.btn.fb:hover{background:var(--fb-dk)}
 
-.hero{position:relative;background:#f4f1ea;padding:96px 0 0;overflow:hidden;border-bottom:1px solid #e3ddd0}
-.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(18,48,79,.07) 1px,transparent 1px);background-size:6px 6px;pointer-events:none}
+.hero{position:relative;background:var(--hero-bg);padding:96px 0 0;overflow:hidden;border-bottom:1px solid var(--hero-line)}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(var(--dot) 1px,transparent 1px);background-size:6px 6px;pointer-events:none}
 .hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.3fr .8fr;gap:40px;align-items:center;padding-bottom:96px}
-.kicker{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);color:var(--navy);font-weight:700;font-size:.9rem;letter-spacing:.12em;text-transform:uppercase;padding:6px 14px;border-radius:999px;margin-bottom:18px}
-.kicker svg{width:16px;height:16px;color:var(--red)}
-.hero h1{font-size:clamp(3rem,7vw,5.4rem);color:var(--navy);text-transform:uppercase;font-weight:800}
-.hero h1 span{color:var(--red)}
-.lead{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:1.6rem;letter-spacing:.04em;text-transform:uppercase;color:var(--navy);margin:0 0 22px}
+.kicker{display:inline-flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--line);color:var(--heading);font-weight:700;font-size:.9rem;letter-spacing:.12em;text-transform:uppercase;padding:6px 14px;border-radius:999px;margin-bottom:18px}
+.kicker svg{width:16px;height:16px;color:var(--accent-text)}
+.hero h1{font-size:clamp(3rem,7vw,5.4rem);color:var(--heading);text-transform:uppercase;font-weight:800}
+.hero h1 span{color:var(--accent-text)}
+.lead{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:1.6rem;letter-spacing:.04em;text-transform:uppercase;color:var(--heading);margin:0 0 22px}
 .pull{font-size:1.4rem;line-height:1.45;color:var(--ink);max-width:30em;margin:0 0 32px;padding-left:18px;border-left:4px solid var(--red)}
 .pull span{display:block;font-size:1rem;color:var(--muted);margin-top:4px}
 .ctas{display:flex;flex-wrap:wrap;gap:14px}
-.score{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px;box-shadow:0 18px 40px rgba(18,48,79,.12);text-align:center}
-.score .big{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:4.6rem;line-height:1;color:var(--navy)}
-.stars{display:inline-flex;gap:3px;color:#e7a400;margin:6px 0 4px}
+.score{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:28px;box-shadow:0 18px 40px var(--shadow);text-align:center}
+.score .big{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:4.6rem;line-height:1;color:var(--heading)}
+.stars{display:inline-flex;gap:3px;color:var(--star);margin:6px 0 4px}
 .stars svg{width:24px;height:24px}
 .score p{margin:0 0 18px;color:var(--muted);font-weight:600}
 .score a{font-weight:700}
 .range{position:absolute;left:0;right:0;bottom:0;z-index:1;width:100%;height:260px;display:block}
 
-.strip{background:var(--navy);color:#fff}
+.strip{background:var(--bar);color:var(--on-bar)}
 .strip ul{list-style:none;margin:0;padding:20px 22px;display:flex;justify-content:center;gap:28px;flex-wrap:wrap}
-.strip li+li::before{content:"";width:6px;height:6px;border-radius:50%;background:#ff8a7d;margin-right:4px}
+.strip li+li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--dot-accent);margin-right:4px}
 .strip li{display:flex;align-items:center;gap:14px;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:1.3rem;letter-spacing:.05em;text-transform:uppercase}
-.strip svg{width:24px;height:24px;color:#ff8a7d}
+.strip svg{width:24px;height:24px;color:var(--dot-accent)}
 
 section{padding:88px 0}
-.eyebrow{font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--red);font-size:.9rem;margin:0 0 8px}
-h2{font-size:clamp(2.2rem,4.4vw,3.2rem);color:var(--navy);text-transform:uppercase;font-weight:800}
+.eyebrow{font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-text);font-size:.9rem;margin:0 0 8px}
+h2{font-size:clamp(2.2rem,4.4vw,3.2rem);color:var(--heading);text-transform:uppercase;font-weight:800}
 .sub{color:var(--muted);max-width:36em;margin:0 0 40px}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.card{background:var(--steel);border-radius:var(--r);padding:30px 28px;border-top:5px solid var(--navy)}
-.card:nth-child(2){border-top-color:var(--red)}
-.card .ic{width:58px;height:58px;border-radius:50%;background:#fff;display:grid;place-items:center;color:var(--navy);margin-bottom:18px;box-shadow:0 4px 12px rgba(18,48,79,.1)}
+.card{background:var(--surface-2);border-radius:var(--r);padding:30px 28px;border-top:5px solid var(--card-top)}
+.card:nth-child(2){border-top-color:var(--accent-text)}
+.card .ic{width:58px;height:58px;border-radius:50%;background:var(--surface);display:grid;place-items:center;color:var(--heading);margin-bottom:18px;box-shadow:0 4px 12px var(--shadow-sm)}
 .card .ic svg{width:30px;height:30px}
-.card h3{font-size:1.75rem;color:var(--navy);text-transform:uppercase}
+.card h3{font-size:1.75rem;color:var(--heading);text-transform:uppercase}
 .card p{margin:0;color:var(--muted)}
 
-.voice{background:var(--steel)}
-.review{margin:0;background:#fff;border-radius:var(--r);padding:44px 40px 32px;position:relative;box-shadow:0 18px 40px rgba(18,48,79,.10)}
-.review::before{content:"\201C";position:absolute;top:-30px;left:28px;font-family:Georgia,serif;font-size:7rem;line-height:1;color:var(--red)}
-.review .quote{font-size:1.55rem;line-height:1.4;color:var(--navy);font-weight:600;margin:0 0 22px}
+.voice{background:var(--surface-2)}
+.review{margin:0;background:var(--surface);border-radius:var(--r);padding:44px 40px 32px;position:relative;box-shadow:0 18px 40px var(--shadow)}
+.review::before{content:"\201C";position:absolute;top:-30px;left:28px;font-family:Georgia,serif;font-size:7rem;line-height:1;color:var(--accent-text)}
+.review .quote{font-size:1.55rem;line-height:1.4;color:var(--heading);font-weight:600;margin:0 0 22px}
 .review footer{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:16px}
 .review .who{font-style:normal;font-weight:700}
 .tag{display:inline-flex;align-items:center;gap:6px;font-size:.92rem;color:var(--muted)}
@@ -99,22 +102,22 @@ h2{font-size:clamp(2.2rem,4.4vw,3.2rem);color:var(--navy);text-transform:upperca
 .visit .wrap{display:grid;grid-template-columns:1fr 1.3fr;gap:36px;align-items:stretch}
 .info{display:flex;flex-direction:column;gap:22px}
 .row{display:flex;gap:16px;align-items:flex-start}
-.row .ic{flex:none;width:48px;height:48px;border-radius:12px;background:var(--navy);color:#fff;display:grid;place-items:center}
+.row .ic{flex:none;width:48px;height:48px;border-radius:12px;background:var(--bar);color:var(--on-bar);display:grid;place-items:center}
 .row .ic svg{width:22px;height:22px}
 .row h3{font-family:"Source Sans 3",sans-serif;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:2px 0 2px}
 .row address,.row a.v{font-style:normal;font-size:1.2rem;font-weight:600;color:var(--ink);text-decoration:none}
-.row a.v:hover{color:var(--red)}
+.row a.v:hover{color:var(--accent-text)}
 .info .ctas{margin-top:6px}
-.map{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);min-height:380px;background:var(--steel)}
+.map{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);min-height:380px;background:var(--surface-2)}
 .map iframe{display:block;width:100%;height:100%;min-height:380px;border:0}
 
-.band{background:var(--navy);color:#fff;padding:60px 0;position:relative;overflow:hidden}
+.band{background:var(--bar);color:var(--on-bar);padding:60px 0;position:relative;overflow:hidden}
 .band .wrap{position:relative;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
-.band h2{color:#fff;margin:0}
-.band p{margin:.3em 0 0;color:#c9d6e3}
-footer.site{background:var(--navy-2);color:#a9b8c8;padding:28px 0;font-size:.95rem}
+.band h2{color:var(--on-bar);margin:0}
+.band p{margin:.3em 0 0;color:var(--bar-soft)}
+footer.site{background:var(--bar-2);color:var(--bar-faint);padding:28px 0;font-size:.95rem}
 footer.site .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
-footer.site a{color:#d7e2ee}
+footer.site a{color:var(--bar-muted)}
 .sticky-call{display:none}
 
 @media (max-width:920px){
@@ -140,16 +143,16 @@ footer.site a{color:#d7e2ee}
   .review{padding:40px 24px 24px}
   .review .quote{font-size:1.3rem}
   .band .btn{width:100%}
-  .sticky-call{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;box-shadow:0 10px 28px rgba(0,0,0,.35)}
+  .sticky-call{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;box-shadow:0 10px 28px var(--shadow-float)}
 }
 
 .voice-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:40px}
 .voice-head h2{margin-bottom:.25em}
 .rev-cols{columns:3;column-gap:22px}
-.rev-cols .review{break-inside:avoid;margin:0 0 22px;padding:30px 26px 22px;box-shadow:0 10px 28px rgba(18,48,79,.08)}
+.rev-cols .review{break-inside:avoid;margin:0 0 22px;padding:30px 26px 22px;box-shadow:0 10px 28px var(--shadow-sm)}
 .rev-cols .review::before{content:none}
 .rev-cols .review .quote{font-size:1.05rem;line-height:1.55;font-weight:400;color:var(--ink);margin:10px 0 18px}
-.stars .on{fill:#e7a400}.stars .off{fill:var(--line)}
+.stars .on{fill:var(--star)}.stars .off{fill:var(--star-off)}
 .rev-cols .stars{margin:0}
 .rev-cols .stars svg{width:18px;height:18px}
 @media (max-width:980px){.rev-cols{columns:2}}
@@ -164,7 +167,7 @@ footer.site a{color:#d7e2ee}
   <symbol id="star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></symbol>
   <symbol id="pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></symbol>
   <symbol id="fb" viewBox="0 0 24 24"><path fill="currentColor" d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></symbol>
-  <symbol id="g" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.5 12.3c0-.8-.1-1.5-.2-2.2H12v4.2h5.9a5 5 0 0 1-2.2 3.3v2.7h3.6c2-1.9 3.2-4.7 3.2-8z"/><path fill="#34A853" d="M12 23c3 0 5.5-1 7.3-2.7l-3.6-2.7c-1 .7-2.2 1-3.7 1-2.9 0-5.3-1.9-6.2-4.5H2.1v2.8A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.8 14.1a6.6 6.6 0 0 1 0-4.2V7.1H2.1a11 11 0 0 0 0 9.8z"/><path fill="#EA4335" d="M12 5.4c1.6 0 3 .6 4.2 1.6l3.1-3.1A11 11 0 0 0 2.1 7.1l3.7 2.8C6.7 7.3 9.1 5.4 12 5.4z"/></symbol>
+  <symbol id="g" viewBox="0 0 24 24"><path style="fill:var(--g-blue)" d="M22.5 12.3c0-.8-.1-1.5-.2-2.2H12v4.2h5.9a5 5 0 0 1-2.2 3.3v2.7h3.6c2-1.9 3.2-4.7 3.2-8z"/><path style="fill:var(--g-green)" d="M12 23c3 0 5.5-1 7.3-2.7l-3.6-2.7c-1 .7-2.2 1-3.7 1-2.9 0-5.3-1.9-6.2-4.5H2.1v2.8A11 11 0 0 0 12 23z"/><path style="fill:var(--g-yellow)" d="M5.8 14.1a6.6 6.6 0 0 1 0-4.2V7.1H2.1a11 11 0 0 0 0 9.8z"/><path style="fill:var(--g-red)" d="M12 5.4c1.6 0 3 .6 4.2 1.6l3.1-3.1A11 11 0 0 0 2.1 7.1l3.7 2.8C6.7 7.3 9.1 5.4 12 5.4z"/></symbol>
 </svg>
 
 <header class="top">
@@ -196,7 +199,7 @@ footer.site a{color:#d7e2ee}
       </div>
       <div class="score">
         <div class="big">4.7</div>
-        <div class="stars" role="img" aria-label="4.7 out of 5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg viewBox="0 0 24 24"><defs><linearGradient id="part"><stop offset="70%" stop-color="#e7a400"/><stop offset="70%" stop-color="#d5dde6"/></linearGradient></defs><path fill="url(#part)" d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg></div>
+        <div class="stars" role="img" aria-label="4.7 out of 5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg viewBox="0 0 24 24"><defs><linearGradient id="part"><stop offset="70%" style="stop-color:var(--star)"/><stop offset="70%" style="stop-color:var(--star-off)"/></linearGradient></defs><path fill="url(#part)" d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg></div>
         <p>from 58 Google reviews</p>
         <a href="https://www.google.com/maps/place/Mountain+States+Auto+%26+Diesel/@39.3528007,-104.6223021,17z/data=!3m1!4b1!4m6!3m5!1s0x876cc1bee7c541ff:0xd4d1949a8ce61c6d!8m2!3d39.3528007!4d-104.6223021!16s%2Fg%2F1w112pbc" target="_blank" rel="noopener">Read the reviews on Google &rarr;</a>
       </div>
@@ -310,7 +313,7 @@ footer.site a{color:#d7e2ee}
         <div><p class="eyebrow">Visit the shop</p><h2 id="visit-h" style="margin:0">Find us in Elizabeth</h2></div>
         <div class="row"><div class="ic"><svg aria-hidden="true"><use href="#pin"/></svg></div><div><h3>Address</h3><address>1267 Highpoint Trl<br>Elizabeth, CO 80107</address></div></div>
         <div class="row"><div class="ic"><svg aria-hidden="true"><use href="#phone"/></svg></div><div><h3>Phone</h3><a class="v" href="tel:+17206660094">(720) 666-0094</a></div></div>
-        <div class="row"><div class="ic" style="background:#1877f2"><svg aria-hidden="true"><use href="#fb"/></svg></div><div><h3>Facebook</h3><a class="v" href="https://www.facebook.com/MountainStatesAuto" target="_blank" rel="noopener">facebook.com/MountainStatesAuto</a></div></div>
+        <div class="row"><div class="ic" style="background:var(--fb)"><svg aria-hidden="true"><use href="#fb"/></svg></div><div><h3>Facebook</h3><a class="v" href="https://www.facebook.com/MountainStatesAuto" target="_blank" rel="noopener">facebook.com/MountainStatesAuto</a></div></div>
         <div class="ctas">
           <a class="btn red" href="tel:+17206660094"><svg class="i" aria-hidden="true"><use href="#phone"/></svg>Call now</a>
           <a class="btn line" href="https://www.google.com/maps/place/Mountain+States+Auto+%26+Diesel/@39.3528007,-104.6223021,17z/data=!3m1!4b1!4m6!3m5!1s0x876cc1bee7c541ff:0xd4d1949a8ce61c6d!8m2!3d39.3528007!4d-104.6223021!16s%2Fg%2F1w112pbc" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#pin"/></svg>Get directions</a>
